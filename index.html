@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Visualizador de Rotação com Quaternions</title>
+    <style>
+      /* Adicione estas novas regras dentro da tag <style> */
+      .color-p {
+         color: #2be9e5; /* Azul, mesma cor do marcador 'p' */
+      }
+      .color-p-prime {
+        color: #ff0099; /* Rosa, mesma cor do marcador 'pPrime' */
+      }
+      .color-line {
+        color: #d284e3; /* Lilás, mesma cor do marcador 'line */
+      }
+        body { 
+            margin: 0; 
+            overflow: hidden; 
+            background-color: #1a1a1a;
+        }
+        canvas {
+            display: block;
+        }
+        #infoPanel {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 14px;
+            border-radius: 5px;
+            width: 450px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div id="infoPanel">
+        Carregando...
+    </div>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
